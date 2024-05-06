@@ -1,7 +1,5 @@
 package com.example.springredditclone.mapper;
 
-//public class SubredditMapper {
-//}
 import com.example.springredditclone.dto.SubredditDto;
 import com.example.springredditclone.model.Post;
 import com.example.springredditclone.model.Subreddit;

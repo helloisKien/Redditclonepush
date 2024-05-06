@@ -1,8 +1,5 @@
 package com.example.springredditclone.controller;
 
-//public class PostController{
-//
-//}
 import com.example.springredditclone.dto.PostRequest;
 import com.example.springredditclone.dto.PostResponse;
 import com.example.springredditclone.service.PostService;

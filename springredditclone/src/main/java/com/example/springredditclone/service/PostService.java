@@ -1,8 +1,6 @@
 package com.example.springredditclone.service;
 
-//public class PostService{
-//
-//}
+
 import com.example.springredditclone.dto.PostRequest;
 import com.example.springredditclone.dto.PostResponse;
 import com.example.springredditclone.exception.PostNotFoundException;

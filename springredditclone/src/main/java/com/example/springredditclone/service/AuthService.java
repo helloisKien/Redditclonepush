@@ -12,14 +12,13 @@ import com.example.springredditclone.repository.VerificationTokenRepository;
 import com.example.springredditclone.security.JWTProvider;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-//import org.springframework.security.crypto.factory.PasswordEncoderFactories;
-//import org.springframework.security.crypto.password.DelegatingPasswordEncoder;
+
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
-//import org.springframework.security.crypto.password.PasswordEncoder;
+
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.security.core.Authentication;
@@ -92,8 +91,6 @@ public class AuthService {
 
     public void verifyAccount(String token) {
         Optional<VerificationToken> verificationTokenOptional = verificationTokenRepository.findByToken(token);
-        //verificationTokenOptional.orElseThrow(() -> new SpringRedditException("Invalid Token"));
-        //fetchUserAndEnable(verificationTokenOptional.get());
         fetchUserAndEnable(verificationTokenOptional.orElseThrow(() -> new SpringRedditException("Invalid Token"))); // NẾU CÓ LỖI Ở ĐÂY THÌ DÙNG DÒNG TRÊN
     }
 

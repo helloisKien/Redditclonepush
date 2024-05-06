@@ -14,19 +14,6 @@ import java.security.*;
 import java.security.cert.CertificateException;
 
 import static io.jsonwebtoken.Jwts.parser;
-//import com.example.springredditclone.exception.SpringRedditException;
-//import io.jsonwebtoken.Jwts;
-//import org.springframework.security.core.Authentication;
-//import org.springframework.security.core.userdetails.User;
-//import org.springframework.stereotype.Service;
-//
-//import jakarta.annotation.PostConstruct;
-//import java.io.IOException;
-//import java.io.InputStream;
-//import java.security.*;
-//import java.security.cert.CertificateException;
-//
-//import static io.jsonwebtoken.Jwts.parser;
 
 @Service
 public class JWTProvider {

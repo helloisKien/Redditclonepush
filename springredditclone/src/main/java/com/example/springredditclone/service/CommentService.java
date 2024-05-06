@@ -26,7 +26,7 @@ import static java.util.stream.Collectors.toList;
 @Transactional
 public class CommentService {
 
-    //TODO: Construct POST URL
+
     private static final String POST_URL = "";
 
     private final CommentMapper commentMapper;
